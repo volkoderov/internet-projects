@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  	<header>
+    	<div class="container">
+      		<div class="logo">Тест</div>
+    	</div>
+  	</header>
+  	<div class="container">
+  		<p id="dis">Загадайте число от 1 до 100</p>
+  		<p id="x">Это число <span id="num1"></span>?</p>
+  		
+  		<button onclick="win()" id="but1">Да </button>
+  		<button onclick="less()" id="but2">Меньше <span id="num3"></span></button>
+  		<button onclick="more()" id="but3">Больше <span id="num2"></span></button>
+	</div>
+</body>
+<script>
+	max = 100;
+	min = 0;
+	mid = (max+min)/2;
+	output();
+	function more(){
+		min = mid;
+		mid = Math.ceil((max+min)/2);
+		output();
+	}
+	function less(){
+		max = mid;
+		mid = Math.ceil((max+min)/2);
+		output();
+	}
+	function output(){
+		num1.innerHTML = mid;
+		num2.innerHTML = mid;
+		num3.innerHTML = mid;
+	}
+	function win(){
+		x.innerHTML = 'Число угадано, для новой игры обновите страницу';
+		but3.style.display = "none";
+		but2.style.display = "none";
+		but1.style.display = "none";
+		but1.style.display = "none";
+		dis.style.display = "none";
+	}
+</script>
+</html>
