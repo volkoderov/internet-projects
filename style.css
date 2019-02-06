@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Roboto', sans-serif;
@@ -9,13 +9,13 @@ body{
 }
 header{
 	background-color: #21548e;
-    height: 60px;
-    margin-bottom: 10px;
+	height: 60px;
+	margin-bottom: 10px;
 }
 .logo{
 	color: white;
-    font-family: 'Indie Flower', cursive;
-    padding-top: 15px;
+	font-family: 'Indie Flower', cursive;
+	padding-top: 15px;
 }
 .container{
 	width: 980px;
@@ -27,33 +27,33 @@ p{
 }
 
 button {
-  background-color: #3a9ee4;
-  border: none;
-  color: white;
-  width: 150px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+	background-color: #3a9ee4;
+	border: none;
+	color: white;
+	width: 150px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 table {
-    font-size: 14px;
-    border-collapse: collapse;
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
+	font-size: 14px;
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
 }
 th, td {
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    border-color: white;
-    padding: 20px;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+	padding: 20px;
 }
 th {
-    background: #AFCDE7;
-    color: white;
+	background: #AFCDE7;
+	color: white;
 }
 td {
-    background: #D8E6F3;
+	background: #D8E6F3;
 }
