@@ -1,12 +1,14 @@
 <?php 
+
 $db = new mysqli('localhost', 'root','', 'test_internet_projects');
 $query="SELECT * FROM username left outer join tel ON username.id=tel.id left outer join dob on username.id=dob.id";
 
 	$result = $db->query($query);
-	while($book = $result->fetch_assoc()) {
-		$books[]=$book;
+	while($val = $result->fetch_assoc()) {
+		$users[]=$val;
 	}
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -27,7 +29,7 @@ $query="SELECT * FROM username left outer join tel ON username.id=tel.id left ou
 					<th>Дата рождения</th>
 					<th>Номер телефона</th>
 				</tr>
-				<?php foreach ($books as $value): ?>
+				<?php foreach ($users as $value): ?>
 				<tr>
 					<td><?=$value['name']?></td>
 					<td><?=$value['surname']?></td>

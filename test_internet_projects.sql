@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 06 2019 г., 20:56
+-- Время создания: Фев 06 2019 г., 21:17
 -- Версия сервера: 5.6.41
 -- Версия PHP: 5.5.38
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- База данных: `test_internet_projects`
 --
+CREATE DATABASE IF NOT EXISTS `test_internet_projects` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `test_internet_projects`;
 
 -- --------------------------------------------------------
 
